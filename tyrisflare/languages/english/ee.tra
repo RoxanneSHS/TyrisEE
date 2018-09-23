@@ -1,0 +1,21 @@
+// Overridden lines in Enhanced Edition
+@41   = ~Tyris Flare's Armour
+This tough leather armour was created for Tyris in order to provide protection but not preclude her ability to cast spells.  It has recently been patched up by Cromwell the blacksmith, who has made some improvements of his own.
+
+STATISTICS
+
+Bonuses:
+Decrease Spell Casting Speed by 1
++50% Fire Resistance
+Armor Class: 5
+Weight: 15
+Requires: 6 Strength~
+@58   = ~Tyris Flare's Armour
+This tough leather armour was created for Tyris in order to provide protection but not preclude her ability to cast spells.
+
+STATISTICS
+
+Bonuses: Decrease Spell Casting Speed by 1
+Armor Class: 6
+Weight: 15
+Requires: 6 Strength~

@@ -4,7 +4,7 @@ SUPPORT ~Roxanne - https://baldursextendedworld.com/Branched-EET-Updates-2 or ro
 
 
 NO_IF_EVAL_BUG
-VERSION ~v8~
+VERSION ~v10.1~
 ASK_EVERY_COMPONENT
 
 ALWAYS
@@ -19,15 +19,8 @@ ALWAYS
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
 
-  LAF HANDLE_CHARSETS
-    INT_VAR
-      infer_charset = 1
-    STR_VAR
-      tra_path = EVAL ~TyrisFlare/Languages~
-  END
 END
 
-README ~TyrisFlare/readme-tyrisflare.html~
 
 AUTO_TRA ~TyrisFlare/Languages/%s~
 LANGUAGE ~English~ ~English~ ~TyrisFlare/Languages/English/Setup-TyrisFlare.tra~
@@ -36,11 +29,6 @@ BEGIN @0
   ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
     LOAD_TRA ~TyrisFlare/Languages/English/ee.tra~
   END
-
-  // IDS Files
-
-  APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~
-    UNLESS ~CD_STATE_NOTVALID~
 
   // BAMs
 

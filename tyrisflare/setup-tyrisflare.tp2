@@ -4,7 +4,7 @@ SUPPORT ~Roxanne - https://baldursextendedworld.com/Branched-EET-Updates-2 or ro
 
 
 NO_IF_EVAL_BUG
-VERSION ~v10.1~
+VERSION ~v10.2~
 ASK_EVERY_COMPONENT
 
 ALWAYS
@@ -24,10 +24,11 @@ END
 
 AUTO_TRA ~TyrisFlare/Languages/%s~
 LANGUAGE ~English~ ~English~ ~TyrisFlare/Languages/English/Setup-TyrisFlare.tra~
+LANGUAGE ~Russian~ ~Russian~ ~TyrisFlare/Languages/Russian/Setup-TyrisFlare.tra~
 
 BEGIN @0
   ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
-    LOAD_TRA ~TyrisFlare/Languages/English/ee.tra~
+    LOAD_TRA ~TyrisFlare/Languages/%LANGUAGE%/ee.tra~
   END
 
   // BAMs
@@ -309,7 +310,7 @@ BEGIN @0
           ~TyrisFlare/Scripts/G#TYRISD.baf~
           ~TyrisFlare/Scripts/G#TFSPWN.baf~
 
-  COMPILE ~TyrisFlare/Scripts/CutScenes/G#TFCUT1.baf~
+  COMPILE ~TyrisFlare/Scripts/CutScenes/G#TFCUT1.baf~ USING ~TyrisFlare/Languages/%LANGUAGE%/ee.tra~
 
   EXTEND_TOP ~baldur.bcs~ ~TyrisFlare/Scripts/BALDUR.baf~
 

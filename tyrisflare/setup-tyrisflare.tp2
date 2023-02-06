@@ -230,8 +230,8 @@ BEGIN @0
     ADD_CRE_ITEM ~ax1h01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
 
   COPY_EXISTING ~vampjah.cre~ ~override/G#TFVAMP.cre~
-    SAY NAME1 ~Tyris~
-    SAY NAME2 ~Tyris~
+    SAY NAME1 @1
+    SAY NAME2 @1
     WRITE_ASCII DEATHVAR ~G#VampireTyris~
     WRITE_ASCII DIALOG ~G#TFVAMP~
     WRITE_ASCII SCRIPT_OVERRIDE ~G#TFVAMP~
@@ -508,8 +508,8 @@ BEGIN @0
       ADD_MEMORIZED_SPELL ~SPWI810~ #7 ~wizard~ (1)
   
     COPY ~TyrisFlare/Creatures/G#TFLOVE.cre~ ~override/G#TFLOVE.cre~
-      SAY NAME1 ~Tarik~
-      SAY NAME2 ~Tarik~
+      SAY NAME1 @59
+      SAY NAME2 @59
       WRITE_ASCII DEATHVAR ~G#TFLOVE~
       WRITE_ASCII DIALOG ~G#TFLOVE~
       ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
